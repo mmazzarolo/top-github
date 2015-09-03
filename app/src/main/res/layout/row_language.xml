@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dimen_small"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/dimen_small">
+
+        <ImageView
+            android:id="@+id/imageview_language"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/dimen_small"
+            android:layout_marginStart="@dimen/dimen_small"
+            android:contentDescription="@string/cd_language"/>
+
+        <TextView
+            android:id="@+id/textview_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/dimen_large"
+            android:layout_marginStart="@dimen/dimen_large"
+            android:textColor="@color/md_grey_700"
+            android:textSize="@dimen/text_large"
+            tools:text="This is the title"/>
+
+        <android.support.v7.widget.SwitchCompat
+            android:id="@+id/switchcompat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_medium"
+            android:layout_weight="0"
+            app:showText="false"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_grey_300"/>
+
+</LinearLayout>

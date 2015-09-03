@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file(RELEASE_STORE_FILE)
+            storePassword RELEASE_STORE_PASSWORD
+            keyAlias RELEASE_KEY_ALIAS
+            keyPassword RELEASE_KEY_PASSWORD
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+    defaultConfig {
+        applicationId "com.mmazzarolo.dev.topgithub"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.0'
+    compile 'com.android.support:design:23.0.0'
+    compile 'com.android.support:palette-v7:23.0.0'
+    compile 'com.android.support:recyclerview-v7:23.0.0'
+    compile 'com.android.support:cardview-v7:23.0.0'
+    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile('com.mikepenz:materialdrawer:4.0.3@aar') {
+        transitive = true
+    }
+    compile 'com.wnafee:vector-compat:1.0.5'
+    compile 'com.malinskiy:materialicons:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.lacronicus:easydatastorelib:1.0.2'
+    compile 'net.danlew:android.joda:2.8.2'
+    compile 'org.parceler:parceler-api:1.0.3'
+    apt "org.parceler:parceler:1.0.3"
+}

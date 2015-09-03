@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Main colors-->
+    <color name="primary">#4078c0</color>
+    <color name="primary_dark">#33609a</color>
+    <color name="accent">#FFC107</color>
+    <color name="github_text">#4078c0</color>
+
+    <!-- Material Drawer colors-->
+    <color name="material_drawer_background">#F9F9F9</color>
+    <color name="material_drawer_primary_text">@color/md_grey_700</color>
+    <color name="material_drawer_primary_icon">#2196F3</color>
+    <color name="material_drawer_secondary_text">#8A000000</color>
+    <color name="material_drawer_hint_text">#42000000</color>
+    <color name="material_drawer_divider">#1F000000</color>
+    <color name="material_drawer_selected">@color/primary</color>
+    <color name="material_drawer_selected_text">@color/md_white_1000</color>
+    <color name="material_drawer_header_selection_text">#FFF</color>
+
+</resources>

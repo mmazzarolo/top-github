@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ndroid="http://schemas.android.com/apk/res-auto"
+    android:background="@color/md_blue_500">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageview_error"
+            android:layout_width="@dimen/main_views_imageview_size"
+            android:layout_height="@dimen/main_views_imageview_size"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/cd_error"/>
+
+        <TextView
+            android:id="@+id/textview_title_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/main_views_title_horizontal_margins"
+            android:layout_marginRight="@dimen/main_views_title_horizontal_margins"
+            android:layout_marginTop="@dimen/main_views_title_bottoml_margin"
+            android:text="@string/error_title"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textview_content_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_title_error"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/main_views_content_bottom_margin"
+            android:layout_marginLeft="@dimen/main_views_content_horizontal_margins"
+            android:layout_marginRight="@dimen/main_views_content_horizontal_margins"
+            android:layout_marginTop="@dimen/main_views_content_top_margin"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/main_views_content_line_spacing"
+            android:textColor="@color/md_white_1000"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_content_error"
+            android:layout_centerHorizontal="true"
+            android:text="@string/error_button"
+            ndroid:theme="@style/ButtonStyle"
+            android:textColor="@color/md_white_1000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

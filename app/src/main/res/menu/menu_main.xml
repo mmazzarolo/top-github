@@ -1,0 +1,26 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/action_calendar"
+        android:icon="@drawable/ic_today_white_24dp"
+        android:orderInCategory="90"
+        android:title="@string/action_calendar"
+        app:showAsAction="ifRoom">
+        <menu>
+            <item
+                android:id="@+id/action_today"
+                android:title="@string/period_today"/>
+            <item
+                android:id="@+id/action_this_week"
+                android:title="@string/period_this_week"/>
+            <item
+                android:id="@+id/action_this_month"
+                android:title="@string/period_this_month"/>
+        </menu>
+    </item>
+
+</menu>

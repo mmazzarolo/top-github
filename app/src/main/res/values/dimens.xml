@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--Generics-->
+    <dimen name="dimen_small">4dp</dimen>
+    <dimen name="dimen_medium">8dp</dimen>
+    <dimen name="dimen_large">16dp</dimen>
+
+    <!-- Text dimensions. -->
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+
+    <!--Main views -->
+    <dimen name="main_views_content_horizontal_margins">56dp</dimen>
+    <dimen name="main_views_content_bottom_margin">16dp</dimen>
+    <dimen name="main_views_content_top_margin">10dp</dimen>
+    <dimen name="main_views_imageview_size">108dp</dimen>
+    <dimen name="main_views_title_horizontal_margins">16dp</dimen>
+    <dimen name="main_views_title_bottoml_margin">20dp</dimen>
+    <dimen name="main_views_content_line_spacing">5.5dp</dimen>
+
+    <!--Repo's rows dimensions-->
+    <dimen name="row_imageview_size">18dp</dimen>
+
+</resources>

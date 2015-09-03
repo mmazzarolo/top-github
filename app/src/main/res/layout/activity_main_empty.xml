@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_yellow_700">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageview_empty"
+            android:layout_width="@dimen/main_views_imageview_size"
+            android:layout_height="@dimen/main_views_imageview_size"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/cd_no_result"/>
+
+        <TextView
+            android:id="@+id/textview_title_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/main_views_title_horizontal_margins"
+            android:layout_marginRight="@dimen/main_views_title_horizontal_margins"
+            android:layout_marginTop="@dimen/main_views_title_bottoml_margin"
+            android:text="@string/empty_list_title"
+            android:textColor="@color/md_white_1000"
+            android:textSize="@dimen/text_medium"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_title_empty"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/main_views_content_bottom_margin"
+            android:layout_marginLeft="@dimen/main_views_content_horizontal_margins"
+            android:layout_marginRight="@dimen/main_views_content_horizontal_margins"
+            android:layout_marginTop="@dimen/main_views_content_top_margin"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/main_views_content_line_spacing"
+            android:text="@string/empty_list_content"
+            android:textColor="@color/md_white_1000"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

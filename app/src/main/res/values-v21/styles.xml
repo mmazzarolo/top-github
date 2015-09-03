@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Main views button style-->
+    <style name="ButtonStyle">
+        <item name="android:colorButtonNormal">@color/accent</item>
+    </style>
+
+</resources>

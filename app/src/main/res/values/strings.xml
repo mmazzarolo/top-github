@@ -1,0 +1,44 @@
+<resources>
+
+    <string name="app_name">GitHub Now</string>
+
+    <!--Generics-->
+    <string name="cancel">Cancel</string>
+
+    <!--Menu's actions name -->
+    <string name="action_calendar">Choose period</string>
+
+    <!--Menu's action descriptions-->
+    <string name="period_today">Today</string>
+    <string name="period_this_week">This week</string>
+    <string name="period_this_month">This month</string>
+
+    <!--Repository rows-->
+    <string name="row_subtitle">%1$s • %2$s stars %3$s • Built by</string>
+    <string name="row_subtitle_no_lang">%1$s stars %2$s • Built by</string>
+
+    <!--Main views -->
+    <string name="no_connection_title">No connection</string>
+    <string name="no_connection_content">We could not establish a connection with GitHub servers. Try again when you are connected to the internet.</string>
+    <string name="no_connection_button">Try Again</string>
+    <string name="empty_list_title">No Results</string>
+    <string name="empty_list_content">Please change your search</string>
+    <string name="error_title">No Results</string>
+    <string name="error_content">Please change your search</string>
+    <string name="error_button">%1$s. Please, try again later or change search.</string>
+
+    <!--Drawer-->
+    <string name="drawer_header">Languages</string>
+
+    <!--LanguageFragment-->
+    <string name="select_languages">Select languages:</string>
+
+    <!--Content descriptions-->
+    <string name="cd_change_languages">Change languages</string>
+    <string name="cd_language">Language</string>
+    <string name="cd_owner">Repository owner</string>
+    <string name="cd_no_connection">No connection</string>
+    <string name="cd_no_result">No results</string>
+    <string name="cd_error">Error</string>
+
+</resources>
