@@ -3,9 +3,9 @@
 <br/>
 <br/>
 <br/>
-<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-main.png" width="240">
-<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-languages.png" width="240">
-<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-edit-languages.png" width="240">
+<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-main.png" width="210">
+<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-languages.png" width="210">
+<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-edit-languages.png" width="210">
 <br/>
 <br/>
 ##Features
