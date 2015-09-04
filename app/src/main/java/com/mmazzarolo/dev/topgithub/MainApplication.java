@@ -25,27 +25,39 @@ public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        // Initalize JodaTime
         JodaTimeAndroid.init(this);
 
+        // Get the RetrofitRestadapter reference
         mGithubApiClient = new GithubApiClient();
+
+        // Initialize a MyDataStore to handle SharedPreferences
         mMyDataStore = new DatastoreBuilder(PreferenceManager.getDefaultSharedPreferences(this))
                 .create(MyDataStore.class);
+
+        // Check if it is the first time the application runs
         if (mMyDataStore.isFirstRun().get(true)) {
-            List<String> defaultLanguages =
-                    Arrays.asList(getResources().getStringArray(R.array.default_languages));
-            List<String> availableLanguages =
-                    Arrays.asList(getResources().getStringArray(R.array.available_languages));
-            ArrayList<Language> userLanguages = new ArrayList<Language>();
-
-            for (String lang : availableLanguages) {
-                Language language = new Language(lang, defaultLanguages.contains(lang));
-                userLanguages.add(language);
-            }
-
-            LanguageList languageList = new LanguageList(userLanguages);
-            mMyDataStore.languages().put(languageList);
-            mMyDataStore.isFirstRun().put(false);
+            onFirestRun();
         }
+    }
+
+    private void onFirestRun() {
+        // Generate user languages SharedPreference from the array of default languages
+        List<String> defaultLanguages =
+                Arrays.asList(getResources().getStringArray(R.array.default_languages));
+        List<String> availableLanguages =
+                Arrays.asList(getResources().getStringArray(R.array.available_languages));
+        ArrayList<Language> userLanguages = new ArrayList<Language>();
+
+        for (String lang : availableLanguages) {
+            Language language = new Language(lang, defaultLanguages.contains(lang));
+            userLanguages.add(language);
+        }
+
+        LanguageList languageList = new LanguageList(userLanguages);
+        mMyDataStore.languages().put(languageList);
+        mMyDataStore.isFirstRun().put(false);
     }
 
     public static GithubApiClient getGihubApiClient() {

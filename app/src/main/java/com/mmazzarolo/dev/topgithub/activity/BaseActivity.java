@@ -17,6 +17,8 @@ import butterknife.ButterKnife;
 
 /**
  * Created by Matteo on 03/09/2015.
+ *
+ * This Activity handles the content/loading/empty/error/no_connection views.
  */
 public abstract class BaseActivity extends AppCompatActivity {
 

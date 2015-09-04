@@ -20,6 +20,7 @@ public class GithubApiClient {
     private static final String BASE_URL = "https://api.github.com/";
     private GithubApiInterface mGithubApiInterface;
 
+    // Creates the Retrofit RestAdapter
     public GithubApiClient() {
         RestAdapter restAdapter = new RestAdapter.Builder()
                 .setLogLevel(RestAdapter.LogLevel.FULL)
@@ -34,6 +35,7 @@ public class GithubApiClient {
     }
 
     public void startSearch(String language, String created) {
+        // Callback for the search results
         Callback callback = new Callback<SearchResult>() {
             @Override
             public void success(SearchResult searchResult, Response response) {
@@ -46,11 +48,14 @@ public class GithubApiClient {
             }
         };
 
+        // Generate the "q" parameter for the API call: be carefull on encoding the value but not
+        // the "+" symbol that links the parameters
         String query = "created:>" + created;
         if (!"".equals(language)) {
             query = query.concat("+language:" + URLEncoder.encode(language));
         }
 
+        // Start the GitHubApi call
         mGithubApiInterface.getRepositories(
                 query,
                 "stars",

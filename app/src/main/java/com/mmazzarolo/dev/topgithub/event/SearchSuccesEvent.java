@@ -9,6 +9,8 @@ import java.util.List;
 
 /**
  * Created by Matteo on 31/08/2015.
+ *
+ * Fired on succesful search.
  */
 public class SearchSuccesEvent {
 

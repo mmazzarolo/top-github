@@ -4,6 +4,8 @@ import retrofit.RetrofitError;
 
 /**
  * Created by Matteo on 31/08/2015.
+ *
+ * Fired on search failure.
  */
 public class SearchFailureEvent {
 

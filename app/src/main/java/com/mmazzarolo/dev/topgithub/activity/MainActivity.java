@@ -62,8 +62,10 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // Register this Activity for Eventbus events
         EventBus.getDefault().register(this);
 
+        // Get Application's RetroAdapter and MyDataStore
         mRepositories = new ArrayList<>();
         mGithubApiClient = MainApplication.getGihubApiClient();
         mMyDataStore = MainApplication.getMyDataStore();
@@ -76,6 +78,7 @@ public class MainActivity extends BaseActivity {
 
         setupDrawer();
 
+        // Handling screen rotation
         if (savedInstanceState != null && savedInstanceState.containsKey(SAVED_LIST)) {
             mRepositories = Parcels.unwrap(savedInstanceState.getParcelable(SAVED_LIST));
             setupRecyclerView();
@@ -102,6 +105,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void setupDrawer() {
+        // Create the drawer
         mDrawer = new DrawerBuilder()
                 .withActivity(this)
                 .withToolbar(mToolbar)
@@ -110,8 +114,11 @@ public class MainActivity extends BaseActivity {
                 .withHeader(R.layout.drawer_header)
                 .build();
 
+        // Add the items to it
         addItemsToDrawer();
 
+        // Set a Click Listener on every drawer's item.
+        // If the item is clicked start a new search
         mDrawer.setOnDrawerItemClickListener((View view, int i, IDrawerItem iDrawerItem) -> {
             PrimaryDrawerItem drawerItem = (PrimaryDrawerItem) iDrawerItem;
             String language = drawerItem.getName().getText();
@@ -122,8 +129,11 @@ public class MainActivity extends BaseActivity {
             return false;
         });
 
+        // Set the selected drawer's item
         mDrawer.setSelection(mSelectedItemId, false);
 
+        // Set the Click Listener on the drawer header button
+        // If it is clicked show the LanguagesFragment
         mDrawer.getHeader().findViewById(R.id.imageview_change_languages).setOnClickListener((View v) -> {
             LanguagesFragment newFragment = new LanguagesFragment();
             newFragment.show(getSupportFragmentManager().beginTransaction(), LanguagesFragment.TAG);
@@ -133,6 +143,7 @@ public class MainActivity extends BaseActivity {
     private void addItemsToDrawer() {
         int itemId = 0;
 
+        // Add the "All" programming language
         PrimaryDrawerItem allDrawerItem = new PrimaryDrawerItem()
                 .withName("All")
                 .withIdentifier(itemId)
@@ -144,6 +155,7 @@ public class MainActivity extends BaseActivity {
         mDrawer.addItem(allDrawerItem);
         mSelectedItemId = 0;
 
+        // Add the every other programming language
         for (String languageName : mLanguages.getUserLanguages()) {
             itemId++;
             PrimaryDrawerItem drawerItem = new PrimaryDrawerItem()
@@ -174,6 +186,7 @@ public class MainActivity extends BaseActivity {
         mRepositories.clear();
         mAdapter.notifyDataSetChanged();
         showLoadingView();
+        // If there is a connection start a search
         if (Utilities.isConnected(this)) {
             if ("All".equals(language)) {
                 language = "";

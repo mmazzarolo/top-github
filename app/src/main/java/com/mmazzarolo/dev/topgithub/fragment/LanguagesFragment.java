@@ -35,7 +35,7 @@ import de.greenrobot.event.EventBus;
  */
 public class LanguagesFragment extends DialogFragment implements CompoundButton.OnCheckedChangeListener {
 
-    public static final String TAG = "com.mmazzarolo.dev.githubnow.LanguageDialogFragment";
+    public static final String TAG = "com.mmazzarolo.dev.topgithub.LanguageDialogFragment";
 
     private Context mContext;
 
@@ -66,6 +66,7 @@ public class LanguagesFragment extends DialogFragment implements CompoundButton.
 
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
+        // Replace the standard dialog with an AlertDialog to get the "OK" and "CANCEL" buttons
         AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
         dialog.setTitle(mStrSelectLanguages);
         dialog.setPositiveButton(
@@ -82,10 +83,13 @@ public class LanguagesFragment extends DialogFragment implements CompoundButton.
                 (DialogInterface dialogInt, int whichButton) -> dialogInt.dismiss()
         );
 
+        // Inflate the view
         View view = getActivity().getLayoutInflater().inflate(R.layout.fragment_languages, null);
         dialog.setView(view);
         ButterKnife.bind(this, view);
+
         setupRecyclerView();
+
         return dialog.create();
     }
 
@@ -111,11 +115,14 @@ public class LanguagesFragment extends DialogFragment implements CompoundButton.
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
         Language language = (Language) buttonView.getTag();
         int pos = mLanguages.indexOf(language);
+        // This gets called even when the VieHolder are generated, then we must check if this is the
+        // ViewHolder generation or if the user clicked on the switch
         if (isChecked != language.isSelected()) {
             mLanguages.get(pos).toggleSelection();
         }
     }
 
+    // Fix for the destroy on FragmentDialog
     @Override
     public void onDestroyView() {
         if (getDialog() != null && getRetainInstance())
