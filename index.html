@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Top-GitHub by mmazzarolo</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Top-GitHub</h1>
+        <h2>Android app for browsing GitHub top repositories</h2>
+        <a href="https://github.com/mmazzarolo/top-github" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="top-github-" class="anchor" href="#top-github-" aria-hidden="true"><span class="octicon octicon-link"></span></a>Top GitHub <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/web_hi_res_120.png" width="110" align="left">
+</h1>
+
+<h5>
+<a id="find-what-repositories-the-github-community-is-most-excited-about-today" class="anchor" href="#find-what-repositories-the-github-community-is-most-excited-about-today" aria-hidden="true"><span class="octicon octicon-link"></span></a><em>Find what repositories the GitHub community is most excited about today.</em>
+</h5>
+
+<p><br>
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-main.png" width="280">
+<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-languages.png" width="280">
+<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-edit-languages.png" width="280">
+<br>
+<br></p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h2>
+
+<h4>
+<a id="api-calls" class="anchor" href="#api-calls" aria-hidden="true"><span class="octicon octicon-link"></span></a>API calls</h4>
+
+<p><strong>Top GitHub</strong> uses <a href="http://square.github.io/retrofit/">Retrofit</a> to process API requests from GitHub.<br>
+The Retrofit <strong>RetrofitRestadapter</strong> is tied to the Application and created only one time, it comunicates the results of API calls using <a href="https://github.com/greenrobot/EventBus">Eventbus</a>.
+<br></p>
+
+<h4>
+<a id="vector-drawables" class="anchor" href="#vector-drawables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Vector drawables</h4>
+
+<p>Almost every Drawable used is generated from a Vector and thanks to <a href="https://github.com/wnafee/vector-compat">Wnafee Vector Compat</a> they are even backward compatible to API 14+.<br>
+The programming languages icons are courtesy of <a href="http://devicon.fr/">DevIcon</a>: I converted the SVGs to XML Vectors with the help of <a href="http://inloop.github.io/svg2android/">inloop</a>.<br>
+You can find the available languages <a href="https://github.com/mmazzarolo/top-github/blob/master/app/src/main/res/values/arrays.xml">here</a>: as you can see the list is massive and there are only <a href="https://github.com/mmazzarolo/top-github/tree/master/app/src/main/res/drawable">a few vectors</a> for them... I'll be pleased to add a vector if you can find one that suits the app (in SVG or XML Vector format).
+<br></p>
+
+<h4>
+<a id="data-storage" class="anchor" href="#data-storage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data storage</h4>
+
+<p>Saving personal settings (like the languages) on a DB was a little overkill so I opted for saving them in SharedPreferences (with the help of <a href="https://github.com/fdoyle/EasyDatastore%5D">EasyDatastore</a>).
+<br>
+<br></p>
+
+<h2>
+<a id="notes" class="anchor" href="#notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes</h2>
+
+<p>This app is totally free, you can do whatever you want to it.<br>
+Please, let me know if you find any bug!
+I also plan to:</p>
+
+<ul>
+<li>Use a MVVM pattern with <a href="https://developer.android.com/tools/data-binding/guide.html">the new Android Data Binding</a> to bind the views to the Recyclerviews</li>
+<li>Add more options and vectors to the app
+<br>
+</li>
+</ul>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/mmazzarolo/top-github/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/mmazzarolo/top-github/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/mmazzarolo/top-github"></a> is maintained by <a href="https://github.com/mmazzarolo">mmazzarolo</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
