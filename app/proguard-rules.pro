@@ -27,3 +27,4 @@
 -ignorewarnings
 -dontshrink
 -keepattributes Signature,*Annotation*,EnclosingMethod
+-keep class com.wnafee.vector.** { *; }
