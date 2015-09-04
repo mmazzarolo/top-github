@@ -242,6 +242,7 @@ public class MainActivity extends BaseActivity {
     }
 
     public void onEvent(ChangedLanguagesEvent event) {
+        getSharedPreferences();
         if (mDrawer.isDrawerOpen()) {
             mDrawer.closeDrawer();
         }
