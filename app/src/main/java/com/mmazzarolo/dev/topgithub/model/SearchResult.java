@@ -13,15 +13,15 @@ public class SearchResult {
 
     @SerializedName("total_count")
     @Expose
-    private Integer totalCount;
+    Integer totalCount;
 
     @SerializedName("incomplete_results")
     @Expose
-    private Boolean incompleteResults;
+    Boolean incompleteResults;
 
     @SerializedName("items")
     @Expose
-    private List<Repository> repositories = new ArrayList<Repository>();
+    List<Repository> repositories = new ArrayList<Repository>();
 
     public Integer getTotalCount() {
         return totalCount;

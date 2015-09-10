@@ -11,67 +11,67 @@ import org.parceler.Parcel;
 @Parcel
 public class User {
     @Expose
-    private String login;
+    String login;
 
     @Expose
-    private Integer id;
+    Integer id;
 
     @SerializedName("avatar_url")
     @Expose
-    private String avatarUrl;
+    String avatarUrl;
 
     @SerializedName("gravatar_id")
     @Expose
-    private String gravatarId;
+    String gravatarId;
     @Expose
-    private String url;
+    String url;
 
     @SerializedName("html_url")
     @Expose
-    private String htmlUrl;
+    String htmlUrl;
 
     @SerializedName("followers_url")
     @Expose
-    private String followersUrl;
+    String followersUrl;
 
     @SerializedName("following_url")
     @Expose
-    private String followingUrl;
+    String followingUrl;
 
     @SerializedName("gists_url")
     @Expose
-    private String gistsUrl;
+    String gistsUrl;
 
     @SerializedName("starred_url")
     @Expose
-    private String starredUrl;
+    String starredUrl;
 
     @SerializedName("subscriptions_url")
     @Expose
-    private String subscriptionsUrl;
+    String subscriptionsUrl;
 
     @SerializedName("organizations_url")
     @Expose
-    private String organizationsUrl;
+    String organizationsUrl;
 
     @SerializedName("repos_url")
     @Expose
-    private String reposUrl;
+    String reposUrl;
 
     @SerializedName("events_url")
     @Expose
-    private String eventsUrl;
+    String eventsUrl;
 
     @SerializedName("received_events_url")
     @Expose
-    private String receivedEventsUrl;
+    String receivedEventsUrl;
 
     @Expose
-    private String type;
+    String type;
 
     @SerializedName("site_admin")
     @Expose
-    private Boolean siteAdmin;
+    Boolean siteAdmin;
 
     public String getLogin() {
         return login;

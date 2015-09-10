@@ -12,52 +12,48 @@ import org.parceler.Parcel;
 public class Repository {
 
     @Expose
-    private Integer id;
+    Integer id;
 
     @Expose
-    private String name;
+    String name;
 
     @SerializedName("full_name")
     @Expose
-    private String fullName;
+    String fullName;
 
     @Expose
-    private User owner;
-
-    @SerializedName("private")
-    @Expose
-    private Boolean _private;
+    User owner;
 
     @SerializedName("html_url")
     @Expose
-    private String htmlUrl;
+    String htmlUrl;
 
     @Expose
-    private String description;
+    String description;
 
     @SerializedName("created_at")
     @Expose
-    private String createdAt;
+    String createdAt;
 
     @SerializedName("updated_at")
     @Expose
-    private String updatedAt;
+    String updatedAt;
 
     @Expose
-    private String homepage;
+    String homepage;
 
     @SerializedName("stargazers_count")
     @Expose
-    private Integer stargazersCount;
+    Integer stargazersCount;
 
     @Expose
-    private String language;
+    String language;
 
     @Expose
-    private Integer watchers;
+    Integer watchers;
 
     @Expose
-    private Double score;
+    Double score;
 
     public Integer getId() {
         return id;
@@ -89,14 +85,6 @@ public class Repository {
 
     public void setOwner(User owner) {
         this.owner = owner;
-    }
-
-    public Boolean get_private() {
-        return _private;
-    }
-
-    public void set_private(Boolean _private) {
-        this._private = _private;
     }
 
     public String getHtmlUrl() {
