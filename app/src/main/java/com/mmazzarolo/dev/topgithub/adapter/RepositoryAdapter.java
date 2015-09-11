@@ -73,7 +73,7 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Vi
 
         String language = repository.getLanguage();
         int numStars = repository.getStargazersCount();
-        String period = MainApplication.getMyDataStore().selectedPeriod().get("this month");
+        String period = MainApplication.getMyDataStore().selectedPeriod().get("action_this_month");
         String periodName = Utilities.getPeriodNameFromPeriod(period);
         String subtitle;
         if (language != null) {
