@@ -30,9 +30,10 @@ This app is totally free, you can do whatever you want to it.
 Please, let me know if you find any bug!
 I also plan to:
 * Use a MVVM pattern with [the new Android Data Binding](https://developer.android.com/tools/data-binding/guide.html) to bind the views to the Recyclerviews
-* Add more options and vectors to the app
-<br/>
-<br/>
+* Add more options and vectors to the app  
+<br/>  
+<br/>  
+
 <a href="https://play.google.com/store/apps/details?id=com.mmazzarolo.dev.topgithub">
   <img alt="Get it on Google Play"
        src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
