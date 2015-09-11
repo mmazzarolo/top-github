@@ -72,7 +72,8 @@ public class MainActivity extends BaseActivity {
 
         getSharedPreferences();
 
-        setupToolbar();
+        setSupportActionBar(mToolbar);
+        setToolbarTitle();
 
         showContentView();
 
@@ -91,8 +92,7 @@ public class MainActivity extends BaseActivity {
         }
     }
 
-    private void setupToolbar() {
-        setSupportActionBar(mToolbar);
+    private void setToolbarTitle() {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(mSelectedLanguage);
         }
@@ -181,6 +181,7 @@ public class MainActivity extends BaseActivity {
     }
 
     private void startSearch() {
+        setToolbarTitle();
         String language = mSelectedLanguage;
         String created = Utilities.getCreatedDateFromPeriod(mSelectedPeriod);
         mRepositories.clear();

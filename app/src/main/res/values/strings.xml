@@ -23,9 +23,9 @@
     <string name="no_connection_button">Try Again</string>
     <string name="empty_list_title">No Results</string>
     <string name="empty_list_content">Please change your search</string>
-    <string name="error_title">No Results</string>
-    <string name="error_content">Please change your search</string>
-    <string name="error_button">%1$s. Please, try again later or change search.</string>
+    <string name="error_title">Error</string>
+    <string name="error_content">%1$s\nPlease, try again in a minute or change your search.</string>
+    <string name="error_button">Try again</string>
 
     <!--Drawer-->
     <string name="drawer_header">Languages</string>
