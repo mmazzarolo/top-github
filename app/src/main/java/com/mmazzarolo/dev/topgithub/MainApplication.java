@@ -38,11 +38,11 @@ public class MainApplication extends Application {
 
         // Check if it is the first time the application runs
         if (mMyDataStore.isFirstRun().get(true)) {
-            onFirestRun();
+            onFirstRun();
         }
     }
 
-    private void onFirestRun() {
+    private void onFirstRun() {
         // Generate user languages SharedPreference from the array of default languages
         List<String> defaultLanguages =
                 Arrays.asList(getResources().getStringArray(R.array.default_languages));
