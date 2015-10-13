@@ -40,6 +40,9 @@ public class Utilities {
             case "CSS":
                 drawableId = R.drawable.vector_css;
                 break;
+            case "Erlang":
+                drawableId = R.drawable.vector_erlang;
+                break;
             case "Go":
                 drawableId = R.drawable.vector_go;
                 break;
@@ -49,7 +52,7 @@ public class Utilities {
             case "Java":
                 drawableId = R.drawable.vector_java;
                 break;
-            case "Javascript":
+            case "JavaScript":
                 drawableId = R.drawable.vector_javascript;
                 break;
             case "PHP":
