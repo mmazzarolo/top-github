@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="default_languages">
-        <item>"Caaaa"</item>
         <item>"CoffeeScript"</item>
         <item>"C++"</item>
         <item>"C#"</item>
