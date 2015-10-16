@@ -1,8 +1,10 @@
 package com.mmazzarolo.dev.topgithub.activity;
 
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -114,6 +116,10 @@ public abstract class BaseActivity extends AppCompatActivity {
         mViewError.setVisibility(View.VISIBLE);
 
         mTextViewContentError.setText(getResources().getString(R.string.error_content, error));
+    }
+
+    public void showSnackBar(String text, int lenght) {
+        Snackbar.make(mViewContent, text, lenght).show();
     }
 
     /**

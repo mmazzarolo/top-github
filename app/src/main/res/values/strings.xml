@@ -41,4 +41,10 @@
     <string name="cd_no_result">No results</string>
     <string name="cd_error">Error</string>
 
+    <!--Sharing dialog-->
+    <string name="share_subject">Share with:</string>
+
+    <!--Snackbar messages-->
+    <string name="sb_copied">URL copied to clipboard.</string>
+
 </resources>

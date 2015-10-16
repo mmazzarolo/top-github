@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <array name="dialog_options">
+        <item>"Share repository"</item>
+        <item>"Copy URL"</item>
+    </array>
+
     <array name="default_languages">
         <item>"CoffeeScript"</item>
         <item>"C++"</item>
