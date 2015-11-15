@@ -213,6 +213,7 @@ public class MainActivity extends BaseActivity {
             case R.id.action_today:
             case R.id.action_this_week:
             case R.id.action_this_month:
+            case R.id.action_this_year:
                 mMyDataStore.selectedPeriod().put(getResources().getResourceEntryName(id));
                 mSelectedPeriod = getResources().getResourceEntryName(id);
                 invalidateOptionsMenu();

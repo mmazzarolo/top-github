@@ -16,10 +16,13 @@
                 android:title="@string/period_today"/>
             <item
                 android:id="@+id/action_this_week"
-                android:title="@string/period_this_week"/>
+                android:title="@string/period_last_week"/>
             <item
                 android:id="@+id/action_this_month"
-                android:title="@string/period_this_month"/>
+                android:title="@string/period_last_month"/>
+            <item
+                android:id="@+id/action_this_year"
+                android:title="@string/period_last_year"/>
         </menu>
     </item>
 

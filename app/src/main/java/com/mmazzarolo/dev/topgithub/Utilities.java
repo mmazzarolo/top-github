@@ -79,6 +79,8 @@ public class Utilities {
                 return new DateTime().minusDays(7).toString("yyyy-MM-dd");
             case "action_this_month":
                 return new DateTime().minusMonths(1).toString("yyyy-MM-dd");
+            case "action_this_year":
+                return new DateTime().minusYears(1).toString("yyyy-MM-dd");
             default:
                 return "";
         }
@@ -89,9 +91,11 @@ public class Utilities {
             case "action_today":
                 return "today";
             case "action_this_week":
-                return "this week";
+                return "last week";
             case "action_this_month":
-                return "this month";
+                return "last month";
+            case "action_this_year":
+                return "last year";
             default:
                 return "";
         }

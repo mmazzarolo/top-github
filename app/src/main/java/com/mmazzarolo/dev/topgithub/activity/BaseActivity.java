@@ -73,7 +73,7 @@ public abstract class BaseActivity extends AppCompatActivity {
         mViewError.setVisibility(View.GONE);
         mImageViewError.setImageDrawable(new IconDrawable(this,
                 Iconify.IconValue.zmdi_alert_circle).colorRes(android.R.color.white));
-        mButtonNoConnection.setOnClickListener((View v) -> onTryAgainClick());
+        mButtonError.setOnClickListener((View v) -> onTryAgainClick());
     }
 
     public void showContentView() {

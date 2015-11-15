@@ -10,8 +10,9 @@
 
     <!--Menu's action descriptions-->
     <string name="period_today">Today</string>
-    <string name="period_this_week">This week</string>
-    <string name="period_this_month">This month</string>
+    <string name="period_last_week">Last week</string>
+    <string name="period_last_month">Last month</string>
+    <string name="period_last_year">Last year</string>
 
     <!--Repository rows-->
     <string name="row_subtitle">%1$s • %2$s stars %3$s • Built by</string>
@@ -24,7 +25,7 @@
     <string name="empty_list_title">No Results</string>
     <string name="empty_list_content">Please change your search</string>
     <string name="error_title">Error</string>
-    <string name="error_content">%1$s\nPlease, try again in a minute or change your search.</string>
+    <string name="error_content">%1$s\nPlease, try again in a minute or change your search.\n GitHub has a 10 requests limit per minute.</string>
     <string name="error_button">Try again</string>
 
     <!--Drawer-->
