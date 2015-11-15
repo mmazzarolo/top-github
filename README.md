@@ -8,6 +8,10 @@
 <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-edit-languages.png" width="210">
 <br/>
 <br/>
+  <a href="https://play.google.com/store/apps/details?id=com.mmazzarolo.dev.topgithub">
+  <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+  </a>
+<br/>
 ##Features
 #### API calls
 **Top GitHub** uses [Retrofit](http://square.github.io/retrofit/) to process API requests from GitHub.  
@@ -32,9 +36,20 @@ I also plan to:
 * Use a MVVM pattern with [the new Android Data Binding](https://developer.android.com/tools/data-binding/guide.html) to bind the views to the Recyclerviews
 * Add more options and vectors to the app  
 <br/>  
-<br/>  
+<br/>
 
-<a href="https://play.google.com/store/apps/details?id=com.mmazzarolo.dev.topgithub">
-  <img alt="Get it on Google Play"
-       src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
-</a>
+## Changelog
+**v1.3**
+- Added a "Last year" option (thanks to Aaron E. for the suggestion) 
+- Fixed the "try again" button on error
+
+**v1.2**
+- Added "Share repository" and "Copy URL to clipboard" options on repository long click 
+- Fixed a bug not showing the JavaScript icon
+- Added Erlang icon
+
+**v1.1**  
+- Fixed a bug showing the wrong name in the toolbar after changing languages
+- Fixed the selected period name on first install
+- Fixed the error msg screen 
+- Fixed naming convention and vector icons
