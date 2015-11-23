@@ -32,9 +32,6 @@ Saving personal settings (like the languages) on a DB was a little overkill so I
 ## Notes
 This app is totally free, you can do whatever you want to it.  
 Please, let me know if you find any bug!
-I also plan to:
-* Use a MVVM pattern with [the new Android Data Binding](https://developer.android.com/tools/data-binding/guide.html) to bind the views to the Recyclerviews
-* Add more options and vectors to the app  
 <br/>  
 <br/>
 
