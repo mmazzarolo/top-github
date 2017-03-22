@@ -1,11 +1,14 @@
 # Top GitHub <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/web_hi_res_120.png" width="110" align="left" /> 
 
-##### *Find what repositories the GitHub community is most excited about today.*
+##### *Find what repositories the GitHub community is most excited about today.*  
+<p align="center">
 <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-main.png" width="210" />
 <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-languages.png" width="210" />
 <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/screen-edit-languages.png" width="210" />
+</p>
 
-<a href="https://play.google.com/store/apps/details?id=com.mmazzarolo.dev.topgithub&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" width="200" /></a>
+<p align="center"><a href="https://play.google.com/store/apps/details?id=com.mmazzarolo.dev.topgithub&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" width="200" /></a>
+</p>
 
 ## Features
 #### API calls
