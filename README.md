@@ -13,6 +13,17 @@
 <p align="center"><a href="https://play.google.com/store/apps/details?id=com.mmazzarolo.dev.topgithub&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/generic/en-play-badge.png" width="200" /></a>
 </p>
 
+## Disclaimer
+<img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/takend-down.png" />
+Sadly, after ~3 years of service Top Github has been taken down from the Play Store because because it was violating the impersonation policy.  
+
+The violation might have been caused by the app logo or by the app name.   
+
+Honestly, since Top Github as always been an open source app (published on GitHub itself) and a side project, I never tought that the naming/logo would have been an issue.  
+I already tried contacting GitHub but sadly they cannot do anything about.   
+
+P.S.: I'm not blaming anyone, I admit that I should have been more careful when choosing the name/logo :)
+
 ## Features
 #### API calls
 **Top GitHub** uses [Retrofit](http://square.github.io/retrofit/) to process API requests from GitHub.  
