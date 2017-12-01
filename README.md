@@ -1,5 +1,5 @@
 # Top GitHub <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/web_hi_res_120.png" width="110" align="left" /> 
-##### *Find what repositories the GitHub community is most excited about today.*  
+Find what repositories the GitHub community is most excited about today.   
 
 &nbsp;  
 &nbsp;  
