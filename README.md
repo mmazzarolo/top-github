@@ -22,7 +22,7 @@ The violation might have been caused by the app logo or by the app name.
 Since Top Github has always been an open source app (published on GitHub itself) and a side project, I never tought that the naming/logo would have been an issue.  
 I already tried contacting GitHub but unfortunately they cannot comment on another platform's decision. 
 
-P.S.: I'm not blaming anyone, I admit that I should have been more careful when choosing the name/logo :)
+Please note that I'm not blaming anyone and I admit that I should have been more careful when choosing the name/logo :)
 
 ## Features
 #### API calls
