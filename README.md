@@ -15,7 +15,7 @@ Find what repositories the GitHub community is most excited about today.
 
 ## Disclaimer
 <img src="https://raw.githubusercontent.com/mmazzarolo/top-github/master/extras/takend-down.png" />
-Sadly, after ~3 years of service, Top Github has been taken down from the Play Store because because it was violating the impersonation policy.  
+Sadly, after ~3 years of service, Top Github has been taken down from the Play Store because it was violating the impersonation policy.  
 
 The violation might have been caused by the app logo or by the app name.   
 
